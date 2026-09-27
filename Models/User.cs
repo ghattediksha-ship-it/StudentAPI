@@ -15,7 +15,7 @@ namespace UserAPI.Models
         // Email validation
         [Required(ErrorMessage = "Email is required.")]
         [EmailAddress(ErrorMessage = "Please enter a valid email address.")]
-        [StringLength(100, ErrorMessage = "Email cannot exceed 100 characters.")]
+        [StringLength(200, ErrorMessage = "Email cannot exceed 100 characters.")]
         public string Email { get; set; } = string.Empty;
 
         // Password validation
